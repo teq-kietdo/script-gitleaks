@@ -2,6 +2,7 @@
 
 const { exec } = require("child_process");
 const readline = require("readline");
+const path = require("path");
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -9,13 +10,13 @@ const rl = readline.createInterface({
 });
 
 rl.question(
-  "Which command that you want to execute? (1: install gitleaks, 2: uninstall gitleaks): ",
+  "Which command do you want to execute? (1: install gitleaks, 2: uninstall gitleaks): ",
   (answer) => {
     let script = "";
     if (answer === "1") {
-      script = "script.sh";
+      script = path.join(__dirname, "script.sh");
     } else if (answer === "2") {
-      script = "delete.sh";
+      script = path.join(__dirname, "delete.sh");
     } else {
       console.log("Invalid choice. Exiting.");
       rl.close();

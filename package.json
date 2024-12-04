@@ -1,6 +1,6 @@
 {
   "name": "script-gitleaks",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "script to install TEQ-GITLEAKS",
   "main": "bin/index.js",
   "scripts": {
