@@ -1,0 +1,17 @@
+{
+  "name": "script-gitleaks",
+  "version": "1.0.0",
+  "description": "script to install TEQ-GITLEAKS",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {  
+    "install-gitleaks": "./bin/index.js"  
+  },  
+  "keywords": [
+    "teq-gitleaks"
+  ],
+  "author": "kietdo",
+  "license": "ISC"
+}
