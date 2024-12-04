@@ -9,6 +9,11 @@
   "bin": {  
     "install-gitleaks": "./bin/index.js"  
   },  
+  "files": [
+    "index.js",
+    "script.sh",
+    "delete.sh"
+  ],
   "keywords": [
     "teq-gitleaks"
   ],
